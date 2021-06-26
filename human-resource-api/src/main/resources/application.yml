@@ -1,0 +1,15 @@
+server:
+  port: 8787
+
+springdoc:
+  api-docs:
+    path: /api-docs
+
+spring:
+  application:
+    name: human-resource-api
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
