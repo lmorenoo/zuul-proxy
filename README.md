@@ -4,13 +4,13 @@ The human-resource-api service is a Spring application app that expones service 
 zuul microservice use https://github.com/spring-cloud/spring-cloud-netflix to forward request to the service application and log the request and headers
 
 ## human-resource-api
-Java 11
-Maven
+Java 11 \
+Maven \
 Server port 8787
 
 ## zuul
-Java 11
-Maven
+Java 11 \
+Maven \
 Server port 8080
 
 ## Example using zuul to call human-resource-api
