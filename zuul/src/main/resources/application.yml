@@ -1,0 +1,11 @@
+zuul:
+  routes:
+    human-resource-api:
+      url: http://localhost:8787
+
+server:
+  port: 8080
+
+ribbon:
+  eureka:
+    enabled: false
