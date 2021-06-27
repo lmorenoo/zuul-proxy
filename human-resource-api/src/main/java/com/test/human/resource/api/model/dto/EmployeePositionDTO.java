@@ -14,15 +14,15 @@ import java.util.stream.Collectors;
 @Data
 public class EmployeePositionDTO {
 
-    private Long id;
+  private Long id;
 
-    private String name;
+  private String name;
 
-    private List<EmployeeDetailDTO> employees;
+  private List<EmployeeDetailDTO> employees;
 
-    public EmployeePositionDTO(Position position, List<Employee> employees) {
-        this.id = position.getId();
-        this.name = position.getName();
-        this.employees = employees.stream().map(EmployeeDetailDTO::new).collect(Collectors.toList());
-    }
+  public EmployeePositionDTO(Position position, List<Employee> employees) {
+    this.id = position.getId();
+    this.name = position.getName();
+    this.employees = employees.stream().map(EmployeeDetailDTO::new).collect(Collectors.toList());
+  }
 }

@@ -13,24 +13,24 @@ import javax.validation.constraints.NotNull;
 @Data
 public class EmployeeDTO {
 
-    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
-    private Long id;
+  @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+  private Long id;
 
-    @NotNull
-    @Min(value = 1, message = "The min value must be greater than 0")
-    private Long personId;
+  @NotNull
+  @Min(value = 1, message = "The min value must be greater than 0")
+  private Long personId;
 
-    @NotBlank
-    private String positionName;
+  @NotBlank
+  private String positionName;
 
-    @NotNull
-    @Min(value = 0)
-    private Double salary;
+  @NotNull
+  @Min(value = 0)
+  private Double salary;
 
-    public EmployeeDTO(Employee employee) {
-        this.id = employee.getId();
-        this.personId = employee.getPerson().getId();
-        this.positionName = employee.getPosition().getName();
-        this.salary = employee.getSalary();
-    }
+  public EmployeeDTO(Employee employee) {
+    this.id = employee.getId();
+    this.personId = employee.getPerson().getId();
+    this.positionName = employee.getPosition().getName();
+    this.salary = employee.getSalary();
+  }
 }

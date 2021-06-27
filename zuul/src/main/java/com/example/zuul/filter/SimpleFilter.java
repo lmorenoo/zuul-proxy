@@ -27,7 +27,7 @@ public class SimpleFilter extends ZuulFilter {
 
     @Override
     public Object run() {
-        RequestContext ctx = RequestContext.getCurrentContext();
+        var ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
 
         log.info("{} Request to {}", request.getMethod(), request.getRequestURL().toString());

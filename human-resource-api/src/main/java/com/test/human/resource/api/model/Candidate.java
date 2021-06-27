@@ -14,17 +14,17 @@ import java.io.Serializable;
 @Entity
 public class Candidate implements Serializable {
 
-    @Id
-    private Long id;
+  @Id
+  private Long id;
 
-    private String name;
+  private String name;
 
-    private String lastName;
+  private String lastName;
 
-    private String address;
+  private String address;
 
-    private String cellphone;
+  private String cellphone;
 
-    private String cityName;
+  private String cityName;
 
 }

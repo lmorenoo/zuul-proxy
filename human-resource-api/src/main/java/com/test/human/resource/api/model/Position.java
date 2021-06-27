@@ -16,13 +16,13 @@ import java.io.Serializable;
 @Entity
 public class Position implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-    private String name;
+  private String name;
 
-    public Position(String name) {
-        this.name = name;
-    }
+  public Position(String name) {
+    this.name = name;
+  }
 }

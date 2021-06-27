@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface PositionRepository extends JpaRepository<Position, Long> {
 
-    boolean existsByName(String name);
+  boolean existsByName(String name);
 
-    Optional<Position> findByName(String name);
+  Optional<Position> findByName(String name);
 }

@@ -10,15 +10,15 @@ import lombok.NoArgsConstructor;
 @Data
 public class EmployeeDetailDTO {
 
-    private Long id;
+  private Long id;
 
-    private Double salary;
+  private Double salary;
 
-    private CandidateDTO person;
+  private CandidateDTO person;
 
-    public EmployeeDetailDTO(Employee employee) {
-        this.id = employee.getId();
-        this.salary = employee.getSalary();
-        this.person = new CandidateDTO(employee.getPerson());
-    }
+  public EmployeeDetailDTO(Employee employee) {
+    this.id = employee.getId();
+    this.salary = employee.getSalary();
+    this.person = new CandidateDTO(employee.getPerson());
+  }
 }

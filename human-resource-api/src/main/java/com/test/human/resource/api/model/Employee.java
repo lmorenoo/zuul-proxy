@@ -13,18 +13,18 @@ import java.io.Serializable;
 @Entity
 public class Employee implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-    @OneToOne
-    @JoinColumn
-    private Candidate person;
+  @OneToOne
+  @JoinColumn
+  private Candidate person;
 
-    @ManyToOne
-    @JoinColumn
-    private Position position;
+  @ManyToOne
+  @JoinColumn
+  private Position position;
 
-    private Double salary;
+  private Double salary;
 
 }

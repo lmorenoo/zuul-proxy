@@ -15,33 +15,33 @@ import javax.validation.constraints.NotNull;
 @Data
 public class CandidateDTO {
 
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    @NotNull
-    @Min(value = 1, message = "The min value must be greater than 0")
-    private Long id;
+  @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+  @NotNull
+  @Min(value = 1, message = "The min value must be greater than 0")
+  private Long id;
 
-    @NotBlank
-    private String name;
+  @NotBlank
+  private String name;
 
-    @NotBlank
-    private String lastName;
+  @NotBlank
+  private String lastName;
 
-    @NotBlank
-    private String address;
+  @NotBlank
+  private String address;
 
-    @NotBlank
-    private String cellphone;
+  @NotBlank
+  private String cellphone;
 
-    @NotBlank
-    private String cityName;
+  @NotBlank
+  private String cityName;
 
-    public CandidateDTO(Candidate candidate) {
-        this.id = candidate.getId();
-        this.name = candidate.getName();
-        this.lastName = candidate.getLastName();
-        this.address = candidate.getAddress();
-        this.cellphone = candidate.getCellphone();
-        this.cityName = candidate.getCityName();
-    }
+  public CandidateDTO(Candidate candidate) {
+    this.id = candidate.getId();
+    this.name = candidate.getName();
+    this.lastName = candidate.getLastName();
+    this.address = candidate.getAddress();
+    this.cellphone = candidate.getCellphone();
+    this.cityName = candidate.getCityName();
+  }
 
 }
