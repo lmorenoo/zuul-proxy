@@ -13,6 +13,9 @@ Java 11 \
 Maven \
 Server port 8080
 
+### Logs HTTP request
+zuul app logs the request and headers that forward to human-resource-api. See SimpleFilter.java
+
 ## Example using zuul to call human-resource-api
 
 ### Create position
